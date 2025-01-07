@@ -3006,9 +3006,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"project-exam@workspace:packages/project-exam":
+"project-exam@workspace:app/project-exam":
   version: 0.0.0-use.local
-  resolution: "project-exam@workspace:packages/project-exam"
+  resolution: "project-exam@workspace:app/project-exam"
   dependencies:
     "@eslint/js": "npm:^9.17.0"
     "@types/react": "npm:^18.3.18"
