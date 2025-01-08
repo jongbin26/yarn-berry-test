@@ -336,7 +336,28 @@ __metadata:
     eslint: "npm:^9.17.0"
     eslint-config-prettier: "npm:^9.1.0"
     eslint-plugin-react: "npm:^7.37.3"
+    typescript: "npm:^5.7.2"
     typescript-eslint: "npm:^8.19.1"
+  languageName: unknown
+  linkType: soft
+
+"@monorepo/project-exam@workspace:app/project-exam":
+  version: 0.0.0-use.local
+  resolution: "@monorepo/project-exam@workspace:app/project-exam"
+  dependencies:
+    "@eslint/js": "npm:^9.17.0"
+    "@types/react": "npm:^18.3.18"
+    "@types/react-dom": "npm:^18.3.5"
+    "@vitejs/plugin-react-swc": "npm:^3.5.0"
+    eslint: "npm:^9.17.0"
+    eslint-plugin-react-hooks: "npm:^5.0.0"
+    eslint-plugin-react-refresh: "npm:^0.4.16"
+    globals: "npm:^15.14.0"
+    react: "npm:^18.3.1"
+    react-dom: "npm:^18.3.1"
+    typescript: "npm:~5.6.2"
+    typescript-eslint: "npm:^8.18.2"
+    vite: "npm:^6.0.5"
   languageName: unknown
   linkType: soft
 
@@ -3005,26 +3026,6 @@ __metadata:
   checksum: 10c0/bbe5edb944b0ad63387a1d5b1911ae93e05ce8d0f60de1035b218cdcceedfe39dbd2c697853355b70f1a090f8f58fe90da487c85216bf9671f9499d1a897e9e3
   languageName: node
   linkType: hard
-
-"project-exam@workspace:app/project-exam":
-  version: 0.0.0-use.local
-  resolution: "project-exam@workspace:app/project-exam"
-  dependencies:
-    "@eslint/js": "npm:^9.17.0"
-    "@types/react": "npm:^18.3.18"
-    "@types/react-dom": "npm:^18.3.5"
-    "@vitejs/plugin-react-swc": "npm:^3.5.0"
-    eslint: "npm:^9.17.0"
-    eslint-plugin-react-hooks: "npm:^5.0.0"
-    eslint-plugin-react-refresh: "npm:^0.4.16"
-    globals: "npm:^15.14.0"
-    react: "npm:^18.3.1"
-    react-dom: "npm:^18.3.1"
-    typescript: "npm:~5.6.2"
-    typescript-eslint: "npm:^8.18.2"
-    vite: "npm:^6.0.5"
-  languageName: unknown
-  linkType: soft
 
 "promise-retry@npm:^2.0.1":
   version: 2.0.1
