@@ -329,7 +329,7 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"@monorepo/eslint-config-custom@workspace:packages/eslint-config-custom":
+"@monorepo/eslint-config-custom@workspace:*, @monorepo/eslint-config-custom@workspace:packages/eslint-config-custom":
   version: 0.0.0-use.local
   resolution: "@monorepo/eslint-config-custom@workspace:packages/eslint-config-custom"
   dependencies:
@@ -346,6 +346,7 @@ __metadata:
   resolution: "@monorepo/project-exam@workspace:app/project-exam"
   dependencies:
     "@eslint/js": "npm:^9.17.0"
+    "@monorepo/eslint-config-custom": "workspace:*"
     "@types/react": "npm:^18.3.18"
     "@types/react-dom": "npm:^18.3.5"
     "@vitejs/plugin-react-swc": "npm:^3.5.0"
