@@ -336,6 +336,7 @@ __metadata:
     eslint: "npm:^9.17.0"
     eslint-config-prettier: "npm:^9.1.0"
     eslint-plugin-react: "npm:^7.37.3"
+    globals: "npm:^15.14.0"
     typescript: "npm:^5.7.2"
     typescript-eslint: "npm:^8.19.1"
   languageName: unknown
