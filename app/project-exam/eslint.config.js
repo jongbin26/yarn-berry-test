@@ -1,3 +1,8 @@
 import custom from "@monorepo/eslint-config-custom";
 
-export default [...custom];
+export default [
+  {
+    ignores: ["**/dist/**"],
+  },
+  ...custom,
+];
