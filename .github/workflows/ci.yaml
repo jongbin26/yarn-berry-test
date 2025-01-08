@@ -37,7 +37,7 @@ jobs:
         run: yarn install
 
       - name: Run project linter
-        run: yarn @monorepo/project-exam lint
+        run: yarn workspace @monorepo/project-exam lint
 
       - name: Run tests
         run: yarn @monorepo/project-exam test
