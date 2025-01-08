@@ -1,0 +1,28 @@
+name: CD
+on:
+  push:
+    branches:
+      - main
+jobs:
+  build-and-deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v2.3.1
+
+      - name: Install dependencies
+        run: |
+          yarn install --immutable --immutable-cache
+          yarn run build
+
+      - name: Build
+        run: |
+          yarn run build
+
+      - name: Sync to S3
+        env:
+          AWS_ACCESS_KEY_ID: ${{ secrets.AWS_ACCESS_KEY_ID }}
+          AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
+          AWS_REGION: "us-west-2"
+        run: |
+          aws s3 sync ./build s3://yarn-berry-test-bucket --delete
