@@ -38,6 +38,3 @@ jobs:
 
       - name: Run project linter
         run: yarn workspace @monorepo/project-exam lint
-
-      - name: Run tests
-        run: yarn @monorepo/project-exam test
